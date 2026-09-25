@@ -19,11 +19,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Parse frontmatter and create post
+        env:
+          POST_CONTENT: ${{ github.event.inputs.post_content }}
         run: |
-          # Write the input to a temp file
-          cat > /tmp/post.md << 'ENDOFPOST'
-          ${{ github.event.inputs.post_content }}
-          ENDOFPOST
+          printf '%s\n' "$POST_CONTENT" > /tmp/post.md
 
           # Extract title from frontmatter (remove quotes if present)
           TITLE=$(grep -m1 '^title:' /tmp/post.md | sed 's/^title:[[:space:]]*//' | sed 's/^["'"'"']//' | sed 's/["'"'"']$//')
