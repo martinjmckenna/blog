@@ -12,7 +12,7 @@ The second capability is an API key with billing set up on OpenRouter. Anthropic
 
 Here's how Claude used these capabilities together for me today.
 
-First, it downsized the 4k video files in order to send them to [Gemini 3.8 Flash](https://openrouter.ai/google/gemini-3.8-flash). Because Claude and I had already been working on this home improvement plan in our session, it was able to write its own prompt for Gemini, aimed at extracting the nature of my physical space as well as my own impressions of what I don't like about it today, and what I aim to improve.
+First, it downsized the 4K video files in order to send them to [Gemini 3.8 Flash](https://openrouter.ai/google/gemini-3.8-flash). Because Claude and I had already been working on this home improvement plan in our session, it was able to write its own prompt for Gemini, aimed at extracting the nature of my physical space as well as my own impressions of what I don't like about it today, and what I aim to improve.
 
 It also separately transcribed my speech as a raw, unprocessed input.
 
